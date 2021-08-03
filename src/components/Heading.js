@@ -10,7 +10,7 @@ const Heading = () => {
             bgSize="100% 100%"
             bgRepeat="no-repeat"
             w={['100%']}
-            h={['240px', '340px','460px' ,'780px']}
+            h={['240px', '340px','460px' ,'750px']}
             bgImage={bgImg}
             p={1}
         >
