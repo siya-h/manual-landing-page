@@ -6,7 +6,7 @@ const FooterLinks = ({ item }) => {
     const { subHeading, links } = item
     return (
         <Box>
-            <Text color="tealish" textTransform="uppercase">{subHeading}</Text>
+            <Text color="tealish" textTransform="uppercase" fontSize={['12px']} my={['5px','10px']}>{subHeading}</Text>
             {
                 links.map((item) => <Fragment key={item.id}><FooterLinkItem link={item} /></Fragment>)
             }

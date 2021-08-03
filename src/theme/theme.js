@@ -7,6 +7,7 @@ const theme = extendTheme({
         brownish_grey: 'rgba(108, 108, 108, 0.5)',
         light_tealish: '#e5f5f4',
         light_grey: '#eeeeee',
+        grey: '#6c6c6c'
         
     },
     components: {
@@ -18,7 +19,7 @@ const theme = extendTheme({
         },
         Divider: {
             baseStyle: {
-                color: '#6c6c6c'
+                backgroundColor: '#6c6c6c',
             }
         }
     }

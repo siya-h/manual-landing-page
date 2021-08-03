@@ -4,8 +4,8 @@ import React from 'react'
 const FooterLinkItem = ({ link }) => {
     const { name, url } = link
     return (
-        <Box>
-            <Link href={url}>{name}</Link>
+        <Box my={['6px','12px']}>
+            <Link href={url} fontFamily="Helvetica" fontSize={['14px']} >{name}</Link>
         </Box>
     )
 }
