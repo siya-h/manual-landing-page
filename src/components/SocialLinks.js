@@ -1,8 +1,8 @@
-import { Box, Flex, Grid, HStack, Image, Link, Text } from '@chakra-ui/react'
+import { Box, Grid, Image, Link, Text } from '@chakra-ui/react'
 import React from 'react'
 import facebook from '../assets/images/facebook-logo.svg'
-import twitter from '../assets/images/twitter-logo.svg'
 import linkedin from '../assets/images/linkedin-logo.svg'
+import twitter from '../assets/images/twitter-logo.svg'
 
 const SocialLinks = () => {
     return (

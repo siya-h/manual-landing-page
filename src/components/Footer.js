@@ -1,4 +1,4 @@
-import { Box, Container, Divider, Flex, Grid, Image, Spacer, Text } from '@chakra-ui/react'
+import { Box, Container, Divider, Grid, Image, Text } from '@chakra-ui/react'
 import React from 'react'
 import logo from '../assets/images/logo.svg'
 import { company, info, products } from '../constants/content/footer'
