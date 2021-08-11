@@ -18,6 +18,7 @@ const QuestionItem = ({ item }) => {
                                 dispatch(addAnswer({ question, value }))
                                 dispatch(updateRejection(isRejection))
                             }}
+                            my="2%"
                         >
                             <Box display="flex" gridGap="5" _hover={{ cursor: 'pointer' }} borderRadius={5} border={answers.find(item => item.question === question && item.value === value) ? "2px solid teal" : "none"}><Box
                             >{parse(display)}</Box>

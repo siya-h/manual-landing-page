@@ -23,7 +23,7 @@ const Quiz = () => {
                     )
                 })
             }
-            {step !== 0 ? <Button onClick={() => dispatch(goBack())} colorScheme="teal">Prev</Button> : null}
+            {step !== 0 ? <Button my='2%' onClick={() => dispatch(goBack())} colorScheme="teal">Prev</Button> : null}
         </Box>
     )
 }
