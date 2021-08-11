@@ -4,7 +4,7 @@ import React from 'react'
 const SwappedConditionItem = ({ item }) => {
     const { imgSrc, heading, summary, description, number } = item
     return (
-        <Box margin={["30px auto", 'initial', 'initial', '80px auto']} maxWidth={['800px']} w={["90%", 'initial', "80%", "100%"]}>
+        <Box margin={["30px auto", 'initial auto', 'initial auto', '80px auto']} maxWidth={['800px']} w={["90%", '80%', "80%", "100%"]}>
             <Text pos="absolute" fontSize={["250px", "300px", "280px", "400px"]} color="light_grey" zIndex="-1" bottom={["36%", "initial", "initial", "16%"]} left={['10%', '0', '12%', '26%']} alignSelf="center">{number}</Text>
 
             <Box display={["block", "grid"]} gridTemplateColumns={['repeat(2, 1fr)']}>

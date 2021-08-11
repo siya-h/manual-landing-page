@@ -11,8 +11,8 @@ const LandingPage = () => {
         <Box>
             <Heading />
             <Text fontFamily="Helvetica" textAlign="center" fontSize={['26px', '30px', '32px', '36px']} mt={['20px', '30px', '50px', '80px']} mb={['15px', '22.5px', '37.5px', '60px']}>What we can help with</Text>
-            <ConditionItem containerStyle={{ margin: '80px auto',maxWidth: '800px' }} item={hairLoss} />
-            <SwappedConditionItem containerStyle={{ margin: '80px auto', maxWidth: '800px' }} item={dysfunction} />
+            <ConditionItem item={hairLoss} />
+            <SwappedConditionItem item={dysfunction} />
             <Footer />
         </Box>
     )

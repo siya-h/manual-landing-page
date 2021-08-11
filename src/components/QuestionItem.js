@@ -13,12 +13,13 @@ const QuestionItem = ({ item }) => {
             <Box gridTemplateColumns={['initial', "repeat(2, 1fr)"]} display="grid">
                 {
                     options.map(({ display, value, isRejection }, index) => (
-                        <Box key={index} >
-                            <Box display="flex" gridGap="5" _hover={{cursor: 'pointer'}} borderRadius={5} border={answers.find(item => item.question === question && item.value === value) ? "2px solid teal" : "none"}><Box
-                                onClick={() => {
-                                    dispatch(addAnswer({ question, value }))
-                                    dispatch(updateRejection(isRejection))
-                                }}
+                        <Box key={index}
+                            onClick={() => {
+                                dispatch(addAnswer({ question, value }))
+                                dispatch(updateRejection(isRejection))
+                            }}
+                        >
+                            <Box display="flex" gridGap="5" _hover={{ cursor: 'pointer' }} borderRadius={5} border={answers.find(item => item.question === question && item.value === value) ? "2px solid teal" : "none"}><Box
                             >{parse(display)}</Box>
                             </Box>
                         </Box>
