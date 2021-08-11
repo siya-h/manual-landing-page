@@ -13,8 +13,8 @@ export const useQuizContext = () => useContext(QuizContext)
 
 const initialState = {
   isRejection: null,
-  completed: false,
-  answers: []
+  answers: [],
+  step: 0,
 };
 
 function App() {
