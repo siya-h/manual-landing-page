@@ -4,12 +4,10 @@ import { useQuizContext } from '../App'
 import Completed from '../components/Completed'
 import QuestionItem from '../components/QuestionItem'
 import Rejected from '../components/Rejected'
-import questionnaire from '../questionnaire'
 import { goBack } from '../state/actions'
 
 const Quiz = () => {
-    const { questions } = questionnaire
-    const { state: { isRejection, answers, step}, dispatch } = useQuizContext()
+    const { state: { isRejection, answers, step }, questions, dispatch } = useQuizContext()
     const progressValue = Math.ceil((answers.length / questions.length) * 100)
     if (isRejection) return <Rejected />
     else if (progressValue === 100) return <Completed />
@@ -19,11 +17,9 @@ const Quiz = () => {
             {
                 [questions[step]].map((item, index) => {
                     return (
-                        <form key={index}>
-                            <Box display="grid">
-                                <QuestionItem item={item} />
-                            </Box>
-                        </form>
+                        <Box display="grid" key={index}>
+                            <QuestionItem item={item} />
+                        </Box>
                     )
                 })
             }

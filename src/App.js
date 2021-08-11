@@ -6,9 +6,9 @@ import Quiz from './pages/Quiz';
 import { quizReducer } from './state/reducer';
 import theme from './theme/theme';
 import { createContext, useContext } from "react";
+import questionnaire from './questionnaire';
 
 export const QuizContext = createContext({})
-
 export const useQuizContext = () => useContext(QuizContext)
 
 const initialState = {
@@ -19,8 +19,10 @@ const initialState = {
 
 function App() {
   const [state, dispatch] = useReducer(quizReducer, initialState)
+  const {questions} = questionnaire
   const value = {
     state,
+    questions,
     dispatch
   }
   return (
